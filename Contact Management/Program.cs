@@ -91,6 +91,10 @@ namespace ContactManagement
                     Console.WriteLine($"Name: {search.Name}, Phone number: {search.PhoneNumber}, Email: {search.Email}");
                  
                 }
+                else
+                {
+                    Console.WriteLine("Enter valid information");
+                }
             }
         }
         static void DeleteContact()
@@ -107,6 +111,10 @@ namespace ContactManagement
                         list.Remove(delete);
                         Console.WriteLine("Contact has been deleted");
                     }
+                    else
+                {
+                    Console.WriteLine("Enter valid information");
+                }
                 }
             }
             catch (Exception ex)
